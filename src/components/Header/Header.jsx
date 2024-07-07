@@ -3,7 +3,8 @@
 const Header = () => {
   return (
     <div className='Header'>
-        Header
+        <div>Logo</div>
+        <div>Links</div>
     </div>
   )
 }
