@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/Header/Header";
+import "./components/Header/Header.css";
+import Main from "./components/Main/Main";
+import "./components/Main/Main.css";
+import Section from "./components/Main/Section/Section";
+import "./components/Main/Section/Section.css";
+import Footer from "./components/Footer/Footer";
+import "./components/Footer/Footer.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Main>
+        <Section>
+          <div className="Section-image"></div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium ipsa quisquam optio omnis modi nemo, excepturi necessitatibus molestiae exercitationem est eaque maxime minus nihil maiores tempore ea eligendi quibusdam eum facilis! Dignissimos impedit placeat fugiat.</p>
+        </Section>
+        <Section>
+          <div className="Section-image"></div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium ipsa quisquam optio omnis modi nemo, excepturi necessitatibus molestiae exercitationem est eaque maxime minus nihil maiores tempore ea eligendi quibusdam eum facilis! Dignissimos impedit placeat fugiat.</p>
+        </Section>
+        <Section>
+          <div className="Section-image"></div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium ipsa quisquam optio omnis modi nemo, excepturi necessitatibus molestiae exercitationem est eaque maxime minus nihil maiores tempore ea eligendi quibusdam eum facilis! Dignissimos impedit placeat fugiat.</p>
+        </Section>
+        <Section>
+          <div className="Section-image"></div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium ipsa quisquam optio omnis modi nemo, excepturi necessitatibus molestiae exercitationem est eaque maxime minus nihil maiores tempore ea eligendi quibusdam eum facilis! Dignissimos impedit placeat fugiat.</p>
+        </Section>
+      </Main>
+      <Footer />
     </div>
   );
 }
