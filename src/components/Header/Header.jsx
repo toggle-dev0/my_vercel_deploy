@@ -3,8 +3,7 @@
 const Header = () => {
   return (
     <div className='Header'>
-        <div>Logo</div>
-        <div>Links</div>
+        <div>A logo and some navigation links</div>
     </div>
   )
 }
