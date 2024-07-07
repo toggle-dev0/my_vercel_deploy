@@ -5,3 +5,21 @@
     padding: 15px;
     margin-bottom: 10px;
 }
+.Header, .logo, .img-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-container {
+    justify-content: center;
+    padding: 8px;
+}
+.logo + div {
+    width: 200px;
+    text-align: center;
+}
+.Header img {
+    display: block;
+    width: 50px;
+}

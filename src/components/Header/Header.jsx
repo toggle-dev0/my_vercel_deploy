@@ -3,7 +3,13 @@
 const Header = () => {
   return (
     <div className='Header'>
-        <div>A logo and some navigation links</div>
+        <div className="logo">
+          <div className="img-container">
+            <img src="./logo192.png" alt="A logo" />
+          </div>
+          <h1>React Page</h1>
+        </div>
+        <div>Header</div>
     </div>
   )
 }
