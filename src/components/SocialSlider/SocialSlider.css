@@ -1,0 +1,7 @@
+.SocialSlider {
+    display: flex;
+    flex-flow: row nowrap;
+    box-sizing: border-box;
+    overflow: auto;
+    width: 100%;
+}

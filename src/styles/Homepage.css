@@ -1,7 +1,22 @@
+* {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
 .Header, .HeroSection {
     color: #0B3040;
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
     background-color: #F3FAFD;
+}
+.breaker {
+    color: #000;
+    width: 50%;
+    margin: 10px 0;
+}
+.breaker .all-caps {
+    text-transform: uppercase;
+}
+.product-section {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 10px 0;
 }
 
 @media screen and (max-width: 900px) {

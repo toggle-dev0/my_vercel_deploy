@@ -11,14 +11,20 @@
 .HeroSection span {
     display: block;
 }
-.HeroSection .img-container {
+.HeroSection .img-container-1 {
     width: 60%;
-    height: 600px;
     overflow: hidden;
     margin-right: 1.4rem;
+    border: 2px solid blue;
+    height: 600px;
+}
+.HeroSection .img-container-2 {
+    height: 351px;
 }
 .HeroSection img {
+    display: block;
     transition: transform .3s;
+    object-fit: cover;
 }
 .HeroSection img:hover {
     transform: scale(1.2, 1.2);
@@ -46,4 +52,16 @@
     top: -70%;
     left: -50%;
     height: 600px;
+} */
+/* @media screen and (max-width: 900px){
+    .HeroSection .img-container {
+        height: 300px;
+        border: 2px solid teal;
+    }
+}
+@media screen and (max-width: 400px){
+    .HeroSection .img-container {
+        height: 120px;
+        border: 2px solid teal;
+    }
 } */

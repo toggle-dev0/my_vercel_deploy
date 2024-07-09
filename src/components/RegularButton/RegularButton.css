@@ -1,5 +1,5 @@
 .RegularButton {
-    margin: 10px 0 0;
+    margin: 5px 0 0;
 }
 .RegularButton button {
     display: inline-block;
@@ -7,13 +7,24 @@
     color: #fff;
     font-weight: 600;
     border: none;
-    padding: 0.625rem;
-    width: 7rem;
+    height: 2.5rem;
     border-radius: 0.5rem;
+    /* padding: 0 1rem; */
     font-size: 1rem;
     border: 2px solid transparent;
     cursor: pointer;
     transition: all .4s;
+    box-sizing: border-box;
+}
+.RegularButton .wide {
+    width: 7rem;
+}
+.RegularButton .xtra-wide {
+    width: 8rem;
+}
+.RegularButton .invert {
+    font-size: 0.9rem;
+    width: 6rem;
 }
 .RegularButton button:hover {
     background-color: #fff;
