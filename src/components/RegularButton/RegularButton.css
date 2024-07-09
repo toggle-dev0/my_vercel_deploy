@@ -1,0 +1,30 @@
+.RegularButton {
+    margin: 10px 0 0;
+}
+.RegularButton button {
+    display: inline-block;
+    background-color: #7B602A;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    padding: 0.625rem;
+    width: 7rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all .4s;
+}
+.RegularButton button:hover {
+    background-color: #fff;
+    border: 2px solid #7B602A;
+    color: #7B602A;
+    box-shadow: 0 4px 6px #222;
+    transition: all .2s;
+}
+.RegularButton button:active {
+    background-color: #7b602aae;
+    color: #ddd;
+    box-shadow: 0 0 0 0 #fff;
+    border: none;
+}

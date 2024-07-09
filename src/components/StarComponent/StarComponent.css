@@ -1,0 +1,10 @@
+/* .StarComponent {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+} */
+.StarComponent img {
+    display: inline-block;
+    width: 1rem;
+    margin: 0.1rem;
+}

@@ -1,17 +1,88 @@
+.Header a {
+    color: #0B3040;
+}
 .ad-at-top {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    background-color: #0B3040;
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 600;
-    overflow: auto;
-    height: 46px;
+    overflow: hidden;
+    padding: 0.75rem 0;
+    background-color: #0B3040;
+    color: #fff;
 }
-.Header span {
+.ad-at-top span, .cart span {
     display: block;
+}
+.ad-at-top span {
+    position: relative;
+    left: 0;
+    animation-name: move;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.logo {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+nav, .nav-links, .utils, .search-bar, .cart-container, .cart .profile {
+    display: flex;
+    flex-flow: row nowrap;
+}
+nav {
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F3FAFD;
+    padding: 0.75rem 0;
+}
+.nav-links {
+    padding: 0;
+    list-style-type: none;
+}
+.nav-links li {
+    margin: 0 10px;
+}
+.nav-links li a:link {
+    text-decoration: none;
+}
+.utils, .search-bar, .cart-container, .profile {
+    justify-content: space-between;
+    align-items: center;
+}
+.search-bar, .cart-container, .profile, .search-icon, .cart {
+    margin: 0 8px;
+}
+
+nav img {
+    width: 100%;
+}
+.search-icon {
+    width: 1.2rem;
+}
+.cart, .profile {
+    width: 1.4rem;
+}
+.search-bar {
+    background-color: #fff;
+    border-radius: 8px;
+}
+.search-box input {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 550;
+    width: 90px;
+    padding: 6px;
+    border: none;
+    border-radius: 8px;
+}
+.search-box input:focus {
+    outline: none;
+}
+/* Animations */
+@keyframes move {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
 }
