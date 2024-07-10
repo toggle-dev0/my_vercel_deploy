@@ -1,9 +1,16 @@
-* {
+.Homepage {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
+    background-color: #F3FAFD;  
 }
 .Header, .HeroSection {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
     color: #0B3040;
     background-color: #F3FAFD;
+}
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .breaker {
     color: #000;
@@ -13,9 +20,10 @@
 .breaker .all-caps {
     text-transform: uppercase;
 }
-.product-section, .trending-section {
+.product-section, .trending-section, .flash-sales-section {
     display: flex;
     flex-flow: row nowrap;
+    width: 90%;
 }
 .product-section {
     margin: 10px 0 50px;
@@ -24,14 +32,6 @@
     margin: 10px 0;
     justify-content: space-between;
 }
-
-@media screen and (max-width: 900px) {
-    .Main {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .Section {
-        width: 100%;
-        box-sizing: border-box;
-    }
+.flash-sales-section {
+    column-gap: 10px;
 }

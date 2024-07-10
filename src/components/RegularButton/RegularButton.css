@@ -1,7 +1,5 @@
-.RegularButton {
+.RegularButton button, .xxtra-wide-invert {
     margin: 5px 0 0;
-}
-.RegularButton button {
     display: inline-block;
     background-color: #7B602A;
     color: #fff;
@@ -9,7 +7,6 @@
     border: none;
     height: 2.5rem;
     border-radius: 0.5rem;
-    /* padding: 0 1rem; */
     font-size: 1rem;
     border: 2px solid transparent;
     cursor: pointer;
@@ -26,20 +23,40 @@
     font-size: 0.9rem;
     width: 6rem;
 }
-.RegularButton .xxtra-wide {
+.RegularButton .xxtra-wide, .xxtra-wide-invert {
     width: 90%;
+}
+.RegularButton .xxtra-wide-invert {
+    color: #7B602A;
+    background-color: transparent;
+    border: 2px solid #7B602A;
+    transition: all .4s;
 }
 .RegularButton .normal {
     padding: 10px 6px;
 }
-.RegularButton button:hover {
+.RegularButton .slim {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100px;
+    height: 1.8rem;
+    margin: 0;
+    padding: 0;
+}
+.RegularButton button:hover, .RegularButton .xxtra-wide-invert:hover {
     background-color: #fff;
     border: 2px solid #7B602A;
     color: #7B602A;
     box-shadow: 0 4px 6px #222;
     transition: all .2s;
 }
-.RegularButton button:active {
+.RegularButton .xxtra-wide-invert:hover {
+    background-color: #7B602A;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.RegularButton button:active, .RegularButton .xxtra-wide-invert:active {
     background-color: #7b602aae;
     color: #ddd;
     box-shadow: 0 0 0 0 #fff;

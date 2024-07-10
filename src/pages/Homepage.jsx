@@ -2,26 +2,21 @@ import React from 'react'
 import Main from '../components/Main/Main'
 import "../components/Main/Main.css"
 import "../components/RegularButton/RegularButton.css"
-// import Section from "../components/Section/Section.jsx"
-// import "../components/Section/Section.css"
 import "../styles/Homepage.css"
-// import Footer from "../components/Footer/Footer.jsx"
-// import "../components/Footer/Footer.css"
 import HeroSection from '../components/HeroSection/HeroSection.jsx'
 import StarComponent from '../components/StarComponent/StarComponent.jsx'
 import RegularButton from '../components/RegularButton/RegularButton.jsx'
 import SocialSlider from '../components/SocialSlider/SocialSlider.jsx'
 import Product from '../components/Product/Product.jsx'
 import Trending from '../components/Trending/Trending.jsx'
-// import LayOnImage from '../components/LayOnImage/LayOnImage.jsx'
+import FlashSale from '../components/FlashSale/FlashSale.jsx'
+import Footer from '../components/Footer/Footer.jsx'
+import "../styles/Homepage.css"
 const Homepage = () => {
   return (
-    <>
+    <div className='Homepage'>
     <Main>
         <HeroSection name="img-container-1" imgSource="./assets/hero-img.jpg">
-        {/* <LayOnImage>
-            Lorem ipsum dolor sit amet.
-        </LayOnImage> */}
             <div className="hero-text">
                 <span className='bigger'>Brown Cardigan</span>
                 <span className="big">Nigerian Made</span>
@@ -104,21 +99,26 @@ const Homepage = () => {
             <Trending title="Collar Hoodie" imgSource="./assets/shop-center-pic-9.png" />
             <Trending title="Black Hat" imgSource="./assets/shop-center-pic-10.png" />
         </div>
-
-        {/* <Section>
-            <div className="Section-image">
-
-            </div>
+        <div className='breaker'>
+            <h2>Flash Sales</h2>
             <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium ipsa
-            quisquam optio omnis modi nemo, excepturi necessitatibus molestiae
-            exercitationem est eaque maxime minus nihil maiores tempore ea eligendi
-            quibusdam eum facilis! Dignissimos impedit placeat fugiat.
+            Join the moving trend! It&apos;s the last flash sale for the year. Enjoy massive discount for some beautiful wears
             </p>
-        </Section> */}
+            <RegularButton name="normal">See all collections</RegularButton>
+        </div>
+        <div className="flash-sales-section">
+            <FlashSale imgSource="./assets/flash-sales-1.jpg" title="Crispy Gown" itemStock="50"
+            itemPrice="50,000" initialPrice="100,000" />
+            <FlashSale imgSource="./assets/flash-sales-2.jpg" title="Crispy Gown" itemStock="50"
+            itemPrice="50,000" initialPrice="100,000" />
+            <FlashSale imgSource="./assets/flash-sales-3.jpg" title="Crispy Gown" itemStock="50"
+            itemPrice="50,000" initialPrice="100,000" />
+        </div>
     </Main>
-    {/* <Footer /> */}
-    </>
+    <div className="footer">
+        <Footer />
+    </div>
+    </div>
   )
 }
 

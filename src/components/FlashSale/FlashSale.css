@@ -1,0 +1,32 @@
+.FlashSale {
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 0.8rem;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    width: 300px;
+    justify-content: space-between;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 6px 4px 7px 2px #8d9c9566;
+}
+.details {
+    padding: 10px;
+    width: 60%;
+}
+.FlashSale .discount {
+    color: #D74C42;
+}
+.FlashSale .img-rep {
+    width: 40%;
+    overflow: hidden;
+}
+.FlashSale img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .2s;
+}
+.FlashSale img:hover {
+    transform: scale(1.2, 1.2);
+}

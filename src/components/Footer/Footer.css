@@ -1,6 +1,49 @@
 .Footer {
-    background-color: #222;
-    color: white;
+    background-color: transparent;
+    color: #707678;
+    font-size: 0.8rem;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 85%;
+    justify-content: space-between;
+    margin: 60px 0 0;
+    padding: 10px;
     text-align: center;
-    padding: 15px;
+}
+.company-description {
+    text-align: left;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 230px;
+    height: 100%;
+    row-gap: 35px;
+}
+.company-description h2 {
+    display: inline-block;
+    text-align: left;
+    color: #7B602A;
+}
+.email-cta {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 1.8rem;
+}
+.email-field input {
+    display: block;
+    height: 100%;
+    margin: 0;
+    width: 120px;
+    padding: 0 12px 0;
+    border: none;
+    background-color: #DFEEE8;
+}
+.email-field input:focus {
+    outline: none;
+}
+.Footer th {
+    padding: 0 10px 10px;
+}
+.Footer td {
+    padding: 10px;
 }
