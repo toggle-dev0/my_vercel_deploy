@@ -3,7 +3,7 @@
     flex-flow: row nowrap;
     font-size: 0.8rem;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
-    width: 300px;
+    width: 500px;
     justify-content: space-between;
     border-radius: 12px;
     overflow: hidden;
@@ -12,6 +12,9 @@
 .details {
     padding: 10px;
     width: 60%;
+}
+.details h2 {
+    font-size: 18px;
 }
 .FlashSale .discount {
     color: #D74C42;

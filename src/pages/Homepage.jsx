@@ -16,7 +16,7 @@ const Homepage = () => {
   return (
     <div className='Homepage'>
     <Main>
-        <HeroSection name="img-container-1" imgSource="./assets/hero-img.jpg">
+        <HeroSection id="Men" name="img-container-1" imgSource="./assets/hero-img.jpg">
             <div className="hero-text">
                 <span className='bigger'>Brown Cardigan</span>
                 <span className="big">Nigerian Made</span>
@@ -33,7 +33,7 @@ const Homepage = () => {
                         <li>Unique</li>
                     </ul>
                     <div>
-                        <RegularButton name="wide">Buy Now</RegularButton>
+                        <RegularButton name="wide">ENABULELE MUNACHI</RegularButton>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@ const Homepage = () => {
             <Product title="Blue Hoodie" imgSource="./assets/product-image-6.jpg" itemStock="20" itemPrice="45,000" initialPrice="75,000"
             itemDescription="Blue hoodie, best suit for cold weather and lon..." />
         </div>
-        <HeroSection name="img-container-2" order="2"  imgSource="./assets/what-to-wear.jpg">
+        <HeroSection id="Women" name="img-container-2" order="2"  imgSource="./assets/what-to-wear.jpg">
             <div className="hero-text">
                 <span className="biggest">Wear to Wedding</span>
                 <span>We give couples a perfect touch that they can use to wedding and...</span>
@@ -85,7 +85,7 @@ const Homepage = () => {
             </p>
             <RegularButton name="normal">See all collections</RegularButton>
         </div>
-        <div className="trending-section">
+        <div id="Trending" className="trending-section">
             <Trending title="Black Top" imgSource="./assets/shop-center-pic-1.png" />
             <Trending title="Round Top" imgSource="./assets/shop-center-pic-2.png" />
             <Trending title="White Top" imgSource="./assets/shop-center-pic-3.png" />
@@ -108,11 +108,11 @@ const Homepage = () => {
         </div>
         <div className="flash-sales-section">
             <FlashSale imgSource="./assets/flash-sales-1.jpg" title="Crispy Gown" itemStock="50"
-            itemPrice="50,000" initialPrice="100,000" />
-            <FlashSale imgSource="./assets/flash-sales-2.jpg" title="Crispy Gown" itemStock="50"
-            itemPrice="50,000" initialPrice="100,000" />
-            <FlashSale imgSource="./assets/flash-sales-3.jpg" title="Crispy Gown" itemStock="50"
-            itemPrice="50,000" initialPrice="100,000" />
+            itemPrice="50,000" initialPrice="100,000" discount="50" />
+            <FlashSale id="Kids" imgSource="./assets/flash-sales-2.jpg" title="Kiddie's Top" itemStock="45"
+            itemPrice="100,000" initialPrice="100,000" discount="75" />
+            <FlashSale imgSource="./assets/flash-sales-3.jpg" title="Men German Suit" itemStock="50"   
+            itemPrice="50,000" initialPrice="100,000" discount="75"/>
         </div>
     </Main>
     <div className="footer">

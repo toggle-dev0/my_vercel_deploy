@@ -11,10 +11,10 @@ const Header = () => {
         </div>
         <nav>
             <ul className="nav-links">
-                <li><Link to="/">Men</Link></li>
-                <li><Link to="#">Women</Link></li>
-                <li><Link to="#">Kids</Link></li>
-                <li><Link to="#">Trending</Link></li>
+                <li><Link to="">Men</Link></li>
+                <li><Link to="">Women</Link></li>
+                <li><Link to="">Kids</Link></li>
+                <li><Link to="">Trending</Link></li>
             </ul>
             <div className="logo">
               <span>VirgoWears</span>
@@ -30,7 +30,9 @@ const Header = () => {
               </div>
                 <div className="cart-container">
                   <div className="cart">
-                    <img src="./assets/blue-cart.svg" alt="Blue cart icon" />
+                    <Link to="/Cartpage">
+                      <img src="./assets/blue-cart.svg" alt="Blue cart icon" />
+                    </Link>
                   </div>
                   <span>Cart</span>
                 </div>

@@ -13,7 +13,7 @@ const FlashSale = (props) => {
             <p className="stock">{props.itemStock} items left</p>
                 <div className="price-box">
                     <span className="price">&#8358;{props.itemPrice}</span>
-                    <span className="discount">&minus;50&#37;</span>
+                    <span className="discount">&minus;{props.discount}&#37;</span>
                 </div>
             <p className='initial-price'>{props.initialPrice}</p>
             <div className="flash-sale-buttons">
